@@ -1,0 +1,264 @@
+<!--Name-Mustakim Vohra Id 140919196-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://kit.fontawesome.com/1835f2c2a8.js" crossorigin="anonymous"></script>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Satisfy&display=swap"
+    rel="stylesheet"
+  />
+   <title>One Stop Shopping</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li id="home"><a>Home</a></li>
+        |
+        <li id="clothes"><a>Clothes</a></li>
+        |
+        <li id="shoes"><a>Shoes</a></li>
+        |
+        <li id="toys"><a>Toys</a></li>
+        |
+        
+      </ul>
+    </nav>
+    <br/>
+    <br/>
+    <h2>
+      <a href="./contact.html">Contact Us</a>
+    </h2>
+      
+    
+    
+    <header>
+      <img
+        class="cicular--square"
+        src="images/logo.png"
+        alt="logo"
+        height="300"
+        width="300"
+      />
+      <h1>Kids Shopping</h1>
+
+      <div class="side-bar">
+        <a class="text" href="#"
+          ><i class="fas fa-shopping-cart"></i>
+          <span class="hovertext">Shopping Cart</span>
+        </a>
+        <br />
+        <a class="text" href="#">
+          <i class="fas fa-search"></i>
+          <span class="hovertext">Search</span>
+        </a>
+        <br />
+        <a class="text" href="mailto:mvohra5@myseneca.ca.ca">
+          <i class="fas fa-envelope"></i>
+          <span class="hovertext">Send an Email</span>
+        </a>
+        <br />
+       
+      </div>
+    </header>
+    <br />
+    <div class="side-about">
+      <p>
+        Wecome to One stop Shopping<br />
+        This is the only store which contains all kind of kids product.<br />
+        Now you don't have to worry about material! <br />
+        Bring the Smile on kids face! Be Happy!<br />
+        Happy Shopping!
+      </p>
+    </div>
+    
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    
+
+    <br />
+    <h2 id="subtitle">Home</h2>
+    <div id="listings"></div>
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+
+    <footer>
+      <div class="footer">
+        <div class="about">
+          <a
+            ><p><u>Declaration</u></p>
+          </a>
+          <p>
+            The work is being done solely by me.  <br />
+            Connect to me via social media given below!
+          </p>
+        </div>
+        <div class="info">
+          <p class="info">Made by Mustakim Vohra</p>
+          <p class="info">Copyright &copy; 2020 All Rights Reserved by Mustakim Vohra</p>
+        </div>
+
+        <div>
+          <hr />
+
+          <p class="info">Connect with Social Media!</p>
+
+          <div class="social-media">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="https://www.facebook.com/vohramustakim78"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a class="instagram" href="https://www.instagram.com/m_a_vohra/>"
+                  ><i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="twitter" href="https://www.twitter.com/">
+                  <i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a class="linkedin" href="https://www.linkedin.com/in/mustakim-vohra-31bb29194/>">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer> 
+    
+    
+    
+    
+    
+    
+    <!--
+      Introduction
+      ------------
+
+      You are asked to create an online store in HTML, CSS, and JavaScript.
+      Please implement a store with all of the following requirements.
+
+      You may remove this comment and place all your HTML in this file.
+
+      Requirements:
+
+      1. Use a JavaScript or JSON file to describe your store's items, and each
+      item's details.  For example, the price, title, description, image URL, etc.
+      should all be properties on an Object, and these Objects should all be stored
+      in one or more Arrays, for example:
+
+      [
+        {
+          name: 'Name of product',
+          description: 'Full desc of this item...'
+          price: 100,                        // NOTE: prices are often done in whole cents and then formatted to dollars/cents
+          category: 'category1',             // category of this item
+          imageUrl: 'images/item-1234.jpg',  // relative URL to image of this item
+        },
+        ...
+      ]
+
+      2. Use JavaScript and DOM programming to build the items in your store (see
+      details below on requirements).  Instead of hard-coding everything in HTML,
+      write functions to generate the cards for each item programmatically (similar
+      to how you built the countries table UI in the previous assignment).
+
+      3. Include a header across the top with your store's name, a logo,
+      and use a different background colour, web font, etc. Your header should
+      include info about what the store is, what it sells, etc.  Use some images
+      to try and draw the user in. NOTE: place all your site's images in the
+      `src/images/` directory.
+
+      4. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. For example, if you are selling clothing, you might
+      have categories for Men, Women, and Children, and each category would have
+      its own set of items.  Each item should include:
+      
+        - a picture of the item
+        - the item's name or title
+        - a complete description of the item
+        - a category (i.e., each item must belong to one or more categories)
+        - a price, formatted in Canadian Dollars (i.e., en-CA)
+      
+      Each item should be its own "card" (i.e., some kind of box around each item
+      separating one from the next, with suitable whitespace between).  The HTML
+      for these cards should be generated from your JavaScript or JSON data (see 1.
+      and 2. above).
+
+      5. A category menu or "sidebar" (left, right, or top depending on your design)
+      showing the different categories of items in your store.  If a
+      user clicks on one of the categories, use CSS and JavaScript to hide all
+      other items in the store (i.e., only show items for the chosen category).
+      Make sure you include a way to return to seeing all categories, and make it
+      obvious to the user that they are only seeing a partial list of items when
+      you filter by category (i.e., use CSS and HTML to change things somehow).
+
+      6. Below the store items, a footer with the name of the store, any relevant
+      links you need to give users.  Include links and icons to any social media
+      for your store (Facebook, Twitter, etc). NOTE: you don't have to create such
+      accounts, but you can provide links to imaginary accounts.
+
+      7. Use at least two different Web Fonts for your store.  The titles should
+      be different from any regular text.  Use a free font service like
+      https://fonts.google.com/ or any other that you choose.  You can also
+      experiment with different font sizes and colours to draw attention toward
+      or away from various parts of your design.
+
+      8. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours (primary, secondary, accent), and use them throughout your site
+      for backgrounds, borders, fonts. Your store page needs to look attractive
+      and marks will be given for good a good looking site.  No one will buy from
+      a store that looks like its owners aren't professional or don't care about
+      details.  Also make sure that the colour contrast in your site is suitable
+      for everyone to read.
+
+      9. Use modern CSS to help you achieve your layout.  For example, Flexbox
+      and CSS Grid can help you create professional looking layouts.  Here
+      are some guides to get you started:
+
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+       
+      You are also welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      10. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them,
+      and include references to indicate where you got them. Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+
+      11. Make sure you reduce the download size of images you include in your
+      store.  Your images shouldn't be larger than 1M in size.  Users don't want to
+      download 10s or 100s of megabytes of data, especially on mobile.  You can use an
+      online tool like https://squoosh.app/ to help you reduce images.  You will
+      lose marks if your images aren't optimized for the web.
+
+      12. Make sure you have no JavaScript or other errors in your Dev Tools Console.
+      Run your site, and test all aspects of it with the Console open, and fix
+      any issues you encounter.
+
+      13. Make sure your code is properly indented and commented, and that you've used
+      good naming practices for variables, functions, ids, classes, etc.
+
+      14. Have fun!  Build something you'd be proud to show future employers in
+      interviews.  Take the time to properly design and implement a beautiful and
+      functional storefront.  Maybe it will inspire you to start your own online business?
+    -->
+  </body>
+</html>
